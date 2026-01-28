@@ -1,0 +1,60 @@
+QUESTION:-
+Write a program to print numbers from 1 to 10.
+Skip the number 5 using continue and stop the loop when the number becomes 8 using break.
+CODE:-
+for i in range(1, 11):
+    if i == 5:
+        continue    # skip number 5
+
+    if i == 8:
+        break       # stop loop at 8
+
+    print(i)
+OUTPUT:-
+1
+2
+3
+4
+6
+7
+OBSERVATION:-
+continue skips only the current iteration (number 5 is not printed).
+
+break terminates the loop completely when the value becomes 8.
+
+Numbers after 8 are not executed.
+
+Loop control statements change the normal flow of the loop.
+
+
+
+QUESTION:-
+Write a program to check numbers from 1 to 6.
+Use pass when the number is 3, skip number 4 using continue, and stop the loop when the number becomes 6 using break.
+CODE:-
+for i in range(1, 7):
+    if i == 3:
+        pass        # no action performed
+
+    elif i == 4:
+        continue    # skip number 4
+
+    elif i == 6:
+        break       # stop loop
+
+    print(i)
+OUTPUT:-
+1
+2
+3
+5
+OBSERVATION:-
+pass does nothing and allows execution to continue normally.
+
+Number 3 is printed because pass does not skip execution.
+
+continue skips printing number 4.
+
+break stops the loop completely at number 6.
+
+pass is used as a placeholder where a statement is required.
