@@ -1,0 +1,120 @@
+Question
+
+Find the output after performing arithmetic, assignment, and conditional operations.
+Code
+x = 12
+y = 7
+
+# Arithmetic + Assignment Operators
+print("Arithmetic & Assignment Operators")
+x += y        # x = 12 + 7
+y *= 2        # y = 7 * 2
+
+print(f"x = {x}")
+print(f"y = {y}")
+print(f"x // y = {x // y}")
+print(f"x % y = {x % y}")
+
+# Conditional Operator
+print("\n" + ("x is greater" if x > y else "y is greater"))
+Output
+Arithmetic & Assignment Operators
+x = 19
+y = 14
+x // y = 1
+x % y = 5
+
+x is greater
+Observation
+
+x += y → x = 19
+
+y *= 2 → y = 14
+
+Floor division → 19 // 14 = 1
+
+Modulus → 19 % 14 = 5
+
+Conditional check → x > y is True
+
+
+
+
+
+
+Question
+
+Evaluate the logical expression using relational and membership operators.
+Code
+a = 10
+b = 20
+nums = [5, 10, 15]
+
+# Relational & Logical Operators
+print("Relational & Logical Operators")
+result = (a < b) and (a in nums)
+
+print(f"a < b = {a < b}")
+print(f"a in nums = {a in nums}")
+print(f"Final Result = {result}")
+Output
+Relational & Logical Operators
+a < b = True
+a in nums = True
+Final Result = True
+Observation
+
+a < b → 10 < 20 → True
+
+a in nums → 10 exists in list → True
+
+True and True → True
+
+
+
+
+
+
+Question
+
+Determine the output after evaluating bitwise, logical, and conditional operators.
+Code
+p = 6      # 0110
+q = 3      # 0011
+
+print("Bitwise & Logical Operators")
+
+bitwise_result = (p & q) | (p ^ q)
+logical_result = (p > q) and (q != 0)
+
+print(f"p & q = {p & q}")
+print(f"p ^ q = {p ^ q}")
+print(f"Combined Bitwise Result = {bitwise_result}")
+print(f"Logical Result = {logical_result}")
+
+print("\n" + ("Valid Operation" if logical_result else "Invalid Operation"))
+Output
+Bitwise & Logical Operators
+p & q = 2
+p ^ q = 5
+Combined Bitwise Result = 7
+Logical Result = True
+
+Valid Operation
+Observation
+
+Binary values:
+
+p = 0110
+
+q = 0011
+
+Operations:
+
+p & q → 0010 → 2
+
+p ^ q → 0101 → 5
+
+2 | 5 → 0111 → 7
+
+Logical check → 6 > 3 and 3 != 0 → True
