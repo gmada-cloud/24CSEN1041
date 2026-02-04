@@ -1,0 +1,136 @@
+Question
+
+Write a Python program to demonstrate string creation, indexing, slicing, and string methods using f-strings.
+Code
+s1 = "Python"
+s2 = "Programming"
+
+print(f"s1 = {s1}")
+print(f"s2 = {s2}")
+
+# Indexing
+print("First character of s1:", s1[0])
+print("Last character of s2:", s2[-1])
+
+# Concatenation using f-string
+s3 = f"{s1} {s2}"
+print("Concatenated string:", s3)
+
+# Slicing
+print("First 6 characters:", s3[:6])
+print("Reverse string:", s3[::-1])
+
+# String methods
+print("Uppercase:", s3.upper())
+print("Lowercase:", s3.lower())
+print("Title case:", s3.title())
+Output
+s1 = Python
+s2 = Programming
+First character of s1: P
+Last character of s2: g
+Concatenated string: Python Programming
+First 6 characters: Python
+Reverse string: gnimmargorP nohtyP
+Uppercase: PYTHON PROGRAMMING
+Lowercase: python programming
+Title case: Python Programming
+Observation
+
+This program shows how f-strings simplify string formatting and how slicing and case-conversion methods work on strings.
+
+
+
+
+
+Question
+
+Write a Python program to perform string operations using user input.
+Code
+name = input("Enter your name: ")
+course = input("Enter your course: ")
+
+message = "Hello " + name + ", welcome to " + course
+print(message)
+
+print("Length of message:", len(message))
+print("Uppercase:", message.upper())
+print("Does message contain 'welcome'?", "welcome" in message)
+Output
+Enter your name: Alex
+Enter your course: Python
+Hello Alex, welcome to Python
+Length of message: 29
+Uppercase: HELLO ALEX, WELCOME TO PYTHON
+Does message contain 'welcome'? True
+Observation
+
+Strings can be dynamically created using input(), and operations like membership testing and case conversion can be easily applied.
+
+
+
+
+
+Question
+
+Write a Python program to demonstrate string indexing, slicing, and traversal using a loop.
+Code
+text = "ComputerScience"
+
+print("Text:", text)
+print("First character:", text[0])
+print("Last character:", text[-1])
+
+print("Characters at even positions:", text[::2])
+print("Reverse string:", text[::-1])
+
+print("Traversing string:")
+for ch in text:
+    print(ch, end=" ")
+Output
+Text: ComputerScience
+First character: C
+Last character: e
+Characters at even positions: CmueSine
+Reverse string: ecneicSretupmoC
+Traversing string:
+C o m p u t e r S c i e n c e
+Observation
+
+Strings support indexing, slicing, and iteration, making them easy to process character by character.
+
+
+
+
+
+
+
+
+
+Question
+
+Write a Python program to demonstrate various string methods such as split(), join(), replace(), and count().
+Code
+sentence = "Python is simple and Python is powerful"
+
+print("Sentence:", sentence)
+
+words = sentence.split()
+print("Split words:", words)
+
+joined = "_".join(words)
+print("Joined string:", joined)
+
+print("Replace 'Python' with 'Java':",
+      sentence.replace("Python", "Java"))
+
+print("Count of 'is':", sentence.count("is"))
+Output
+Sentence: Python is simple and Python is powerful
+Split words: ['Python', 'is', 'simple', 'and', 'Python', 'is', 'powerful']
+Joined string: Python_is_simple_and_Python_is_powerful
+Replace 'Python' with 'Java': Java is simple and Java is powerful
+Count of 'is': 2
+Observation
+
+String methods allow easy manipulation of text, including splitting into words, joining strings, replacing content, and counting occurrences.
