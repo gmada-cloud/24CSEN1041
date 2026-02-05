@@ -1,0 +1,31 @@
+Question
+
+Write a Python program that reads a user’s name and age, then displays a message using string operations.
+
+Code
+# Program using string literals and operators
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+
+message = "Hello " + name + "!"
+next_year_age = age + 1
+
+print(message)
+print("Next year you will be", next_year_age, "years old.")
+
+Output
+Enter your name: Alex
+Enter your age: 20
+Hello Alex!
+Next year you will be 21 years old.
+
+Observation
+
+"Hello " and "years old" are string literals.
+
+name, age, and message are valid identifiers.
+
++ is used as both string concatenation and arithmetic addition.
+
+Python dynamically assigns data types.
