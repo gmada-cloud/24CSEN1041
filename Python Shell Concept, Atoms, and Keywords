@@ -1,0 +1,31 @@
+Question
+
+Demonstrate the use of Python atoms, keywords, and expressions by checking whether a number is positive, negative, or zero.
+
+Code
+# Program to classify a number
+
+num = float(input("Enter a number: "))
+
+if num > 0:
+    result = "Positive"
+elif num < 0:
+    result = "Negative"
+else:
+    result = "Zero"
+
+print("The number is", result)
+
+Output
+Enter a number: -3
+The number is Negative
+
+Observation
+
+Numbers and strings used here are atoms.
+
+if, elif, and else are keywords.
+
+Python shell evaluates expressions like num > 0.
+
+Indentation controls program flow.
