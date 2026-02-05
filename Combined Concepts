@@ -1,0 +1,39 @@
+Question
+
+Write a Python program to calculate the total and average of three marks entered by the user and display pass or fail.
+
+Code
+# Program to calculate total, average and result
+
+m1 = float(input("Enter marks 1: "))
+m2 = float(input("Enter marks 2: "))
+m3 = float(input("Enter marks 3: "))
+
+total = m1 + m2 + m3
+average = total / 3
+
+print("Total Marks =", total)
+print("Average Marks =", average)
+
+if average >= 40:
+    print("Result: Pass")
+else:
+    print("Result: Fail")
+
+Output
+Enter marks 1: 50
+Enter marks 2: 45
+Enter marks 3: 60
+Total Marks = 155.0
+Average Marks = 51.666666666666664
+Result: Pass
+
+Observation
+
+Uses input/output, operators, and indentation together.
+
+Floating-point literals are used.
+
+Python interpreter automatically handles decimal precision.
+
+Logical decision-making is done using comparison operators.
