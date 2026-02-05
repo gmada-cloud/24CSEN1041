@@ -1,0 +1,40 @@
+Question
+
+Write a Python program that reads two numbers from the keyboard, performs arithmetic operations, and prints the results in a formatted way.
+
+Code
+# Program to perform arithmetic operations
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+if b != 0:
+    sum_val = a + b
+    diff = a - b
+    product = a * b
+    quotient = a / b
+
+    print("Sum =", sum_val)
+    print("Difference =", diff)
+    print("Product =", product)
+    print("Quotient =", quotient)
+else:
+    print("Division by zero is not allowed")
+
+Output
+Enter first number: 10
+Enter second number: 5
+Sum = 15
+Difference = 5
+Product = 50
+Quotient = 2.0
+
+Observation
+
+Python interpreter executes the program line by line.
+
+Proper indentation is required inside the if block.
+
+input() reads data as a string and is converted using int().
+
+Arithmetic operators (+ - * /) are used.
