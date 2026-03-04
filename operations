@@ -1,0 +1,59 @@
+Problem 2: Student Result & Scholarship Eligibility
+Problem Statement
+
+A university evaluates students based on:
+
+Average marks of 3 subjects.
+
+Scholarship eligibility:
+
+Average ≥ 85 AND attendance ≥ 90 → Scholarship approved
+
+Otherwise rejected.
+
+Use bitwise operator to check if average is odd or even.
+
+Question
+
+Write a program to:
+
+Calculate average marks.
+
+Check scholarship eligibility.
+
+Determine if average is even or odd using bitwise AND.
+
+Code
+math = 92
+science = 88
+english = 84
+attendance = 93
+
+average = (math + science + english) / 3
+
+eligible = average >= 85 and attendance >= 90
+
+# Bitwise check for even/odd
+if int(average) & 1:
+    parity = "Odd"
+else:
+    parity = "Even"
+
+print("Average Marks:", average)
+print("Attendance:", attendance)
+print("Scholarship Eligible:", eligible)
+print("Average is:", parity)
+Output
+Average Marks: 88.0
+Attendance: 93
+Scholarship Eligible: True
+Average is: Even
+Observation
+
+Logical AND checks multiple conditions.
+
+Arithmetic operators compute average.
+
+Bitwise AND (& 1) determines parity efficiently.
+
+Boolean variable stores eligibility result.
