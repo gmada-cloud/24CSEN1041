@@ -1,0 +1,60 @@
+
+Problem 3: Secure Login & Access Level System
+Problem Statement
+
+A system checks:
+
+Username and password match stored values.
+
+Access level determined using bitwise flags:
+
+1 → Read
+
+2 → Write
+
+4 → Execute
+
+User has permission value = 5.
+Question
+
+Write a program to:
+
+Validate login credentials.
+
+Check which permissions user has.
+
+Print access rights.
+
+Code
+stored_user = "admin"
+stored_pass = "secure123"
+
+username = "admin"
+password = "secure123"
+
+permissions = 5   # Binary 101
+
+login_success = (username == stored_user) and (password == stored_pass)
+
+print("Login Successful:", login_success)
+
+if login_success:
+    print("Permissions:")
+    print("Read Access:", bool(permissions & 1))
+    print("Write Access:", bool(permissions & 2))
+    print("Execute Access:", bool(permissions & 4))
+Output
+Login Successful: True
+Permissions:
+Read Access: True
+Write Access: False
+Execute Access: True
+Observation
+
+Relational operators validate credentials.
+
+Logical AND ensures both username & password match.
+
+Bitwise AND extracts permission flags.
+
+Binary representation helps manage access control efficiently.
